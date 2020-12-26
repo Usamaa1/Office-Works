@@ -1,0 +1,92 @@
+html, body {
+    height: 100vh;
+    /*font-size: 16px;*/ 
+    font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+   }
+   
+   body {
+    overflow: hidden;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+   }
+   
+   .contaniner {
+    position: relative;
+    flex-grow: 1;
+    /* margin: auto; */
+    max-width: 1000px;
+    max-height: 800px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 300px;
+    /* justify-items: center;
+    align-items: center; */
+   }
+   
+   img {
+    z-index: 1;
+    grid-column: span 2;
+    width: 250px;
+    height: 250px;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .25s;
+    margin-top: -125px;
+   }
+   img:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+   }
+   img:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+   }html, body {
+    height: 100vh;
+    /*font-size: 16px;*/
+    
+    font-family: Trebuchet MS, Helvetica, Arial, sans-serif;
+   }
+   
+   body {
+    overflow: hidden;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+   }
+   
+   .contaniner {
+    position: relative;
+    flex-grow: 1;
+    /* margin: auto; */
+    max-width: 1200px;
+    max-height: 1200px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+   }
+   
+   img {
+    z-index: 1;
+    grid-column: span 2;
+    width: 250px;
+    height: 250px;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    transition: all .25s;
+   }
+   img:nth-child(7n + 1) {
+    grid-column: 2 / span 2;
+   }
+   img:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+   }
